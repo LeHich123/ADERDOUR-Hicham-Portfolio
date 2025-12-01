@@ -1,11 +1,15 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hicham Aderdour - Étudiant en BUT MMI</title>
     <link rel="stylesheet" href="style.css">
+    <!-- Import des icônes pour les réseaux sociaux -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
+
 <body>
     <!-- Loading Screen -->
     <div id="loading-screen" class="loading-screen">
@@ -23,13 +27,16 @@
     <nav class="navbar">
         <div class="nav-container">
             <div class="nav-logo">
-        <img src="logo_Hicham.png" alt="Logo Hicham Aderdour" class="logo-img">
-  </div>
+                <a href="#home">
+                    <img src="logo_Hicham.png" alt="Logo Hicham Aderdour" class="logo-img">
+                </a>
+            </div>
             <ul class="nav-menu">
                 <li><a href="#home" class="nav-link">Accueil</a></li>
                 <li><a href="#about" class="nav-link">À propos</a></li>
-                <li><a href="#projects" class="nav-link">Projets</a></li>
+                <!-- Section Compétences déplacée ici -->
                 <li><a href="#skills" class="nav-link">Compétences</a></li>
+                <li><a href="#projects" class="nav-link">Projets</a></li>
                 <li><a href="#contact" class="nav-link">Contact</a></li>
             </ul>
             <div class="hamburger">
@@ -42,6 +49,7 @@
 
     <!-- Hero Section -->
     <section id="home" class="hero">
+        <div class="particles-container"></div>
         <div class="hero-content">
             <div class="hero-text">
                 <h1 class="hero-title">
@@ -49,12 +57,18 @@
                     <span class="title-line">ADERDOUR</span>
                 </h1>
                 <p class="hero-subtitle typewriter">Étudiant en BUT MMI</p>
-                <p class="hero-description">Passionné par l'audiovisuel. J'explore l'univers du multimédia à travers la photo, la vidéo et la création numérique.</p>
-                <button class="cta-button">
+                <p class="hero-description">Passionné par l'audiovisuel. J'explore l'univers du multimédia à travers la
+                    photo, la vidéo et la création numérique.</p>
+                <button class="cta-button"
+                    onclick="document.getElementById('projects').scrollIntoView({behavior: 'smooth'})">
                     <span>Découvrir mon travail</span>
                     <div class="button-bg"></div>
                 </button>
             </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-line"></div>
+            <span>SCROLL</span>
         </div>
     </section>
 
@@ -68,16 +82,18 @@
             <div class="about-content">
                 <div class="about-text">
                     <p class="about-description">
-                        Étudiant en BUT MMI 2ème année, je me spécialise dans la création multimédia avec une passion particulière pour l'audiovisuel. Mon approche créative mélange technique et artistique pour produire des contenus visuels impactants.
+                        Étudiant en BUT MMI 2ème année, je me spécialise dans la création multimédia avec une passion
+                        particulière pour l'audiovisuel. Mon approche créative mélange technique et artistique pour
+                        produire des contenus visuels impactants.
                     </p>
                     <div class="about-stats">
                         <div class="stat-item">
-                            <span class="stat-number" data-target="5">0</span>
-                            <span class="stat-label">Mes Projets</span>
+                            <span class="stat-number" data-target="15">0</span>
+                            <span class="stat-label">Projets Réalisés</span>
                         </div>
                         <div class="stat-item">
                             <span class="stat-number" data-target="2">0</span>
-                            <span class="stat-label">Années d'étude en MMI</span>
+                            <span class="stat-label">Années d'expérience</span>
                         </div>
                         <div class="stat-item">
                             <span class="stat-number" data-target="100">0</span>
@@ -90,12 +106,113 @@
                 </div>
             </div>
         </div>
-         
+    </section>
+
+    <!-- Skills Section (Déplacée ici) -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">COMPÉTENCES</h2>
+                <div class="section-line"></div>
+            </div>
+
+            <!-- Partie 1: Frise Animée (Logiciels) -->
+            <div class="skills-tools-section">
+                <h3 class="skills-subtitle">Mes Outils</h3>
+                <div class="marquee-container">
+                    <div class="marquee-content">
+                        <!-- Duplication des éléments pour l'effet infini -->
+                        <div class="tool-item">
+                            <img src="photoshop.png" alt="Photoshop">
+                            <span>Photoshop</span>
+                        </div>
+                        <div class="tool-item">
+                            <img src="lightroom.png" alt="Lightroom">
+                            <span>Lightroom</span>
+                        </div>
+                        <div class="tool-item">
+                            <img src="images/illustrator.png" alt="Illustrator">
+                            <span>Illustrator</span>
+                        </div>
+                        <!-- Répétition pour l'animation fluide -->
+                        <div class="tool-item">
+                            <img src="photoshop.png" alt="Photoshop">
+                            <span>Photoshop</span>
+                        </div>
+                        <div class="tool-item">
+                            <img src="lightroom.png" alt="Lightroom">
+                            <span>Lightroom</span>
+                        </div>
+                        <div class="tool-item">
+                            <img src="illustrator.png" alt="Illustrator">
+                            <span>Illustrator</span>
+                        </div>
+                        <div class="tool-item">
+                            <img src="photoshop.png" alt="Photoshop">
+                            <span>Photoshop</span>
+                        </div>
+                        <div class="tool-item">
+                            <img src="lightroom.png" alt="Lightroom">
+                            <span>Lightroom</span>
+                        </div>
+                        <div class="tool-item">
+                            <img src="illustrator.png" alt="Illustrator">
+                            <span>Illustrator</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Partie 2: Barres de progression (Rédactionnel & Graphique) -->
+            <div class="skills-domains-section">
+                <div class="domain-column">
+                    <h3 class="skills-subtitle">Graphisme & Visuel</h3>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span class="skill-name">Direction Artistique</span>
+                            <span class="skill-percentage">85%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="85"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span class="skill-name">Retouche Photo</span>
+                            <span class="skill-percentage">90%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="90"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="domain-column">
+                    <h3 class="skills-subtitle">Rédactionnel & Communication</h3>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span class="skill-name">Storytelling</span>
+                            <span class="skill-percentage">80%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="80"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span class="skill-name">Scénarisation</span>
+                            <span class="skill-percentage">75%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="75"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
     <!-- Projects Section -->
-
-
     <section id="projects" class="projects">
         <div class="container">
             <div class="section-header">
@@ -108,13 +225,14 @@
                 <button class="filter-btn" data-filter="Communication">Communication</button>
             </div>
             <div class="projects-grid">
+                <!-- Projet 1 -->
                 <div class="project-card" data-category="Communication">
                     <div class="project-image">
                         <img src="affiche_achraf_hakimi.jpg" alt="Affiche Achraf Hakimi">
                     </div>
                     <div class="project-content">
-                        <h3 class="project-title">Affiche Achraf Hakimi, SEPTEMBRE 2025</h3>
-                        <p class="project-description"> Projet personnel  Achraf Hakimi</p>
+                        <h3 class="project-title">Affiche Achraf Hakimi</h3>
+                        <p class="project-description">Projet personnel Septembre 2025</p>
                         <div class="project-tags">
                             <span class="tag">Photoshop</span>
                             <span class="tag">Design</span>
@@ -125,17 +243,17 @@
                     </div>
                 </div>
 
+                <!-- Projet 2 -->
                 <div class="project-card" data-category="Communication">
                     <div class="project-image">
-                        <img src="affiche_2_food_tech.png" alt="Évenement Food Tech">
+                        <img src="affiche_2_food _tech.png" alt="Évenement Food Tech">
                     </div>
                     <div class="project-content">
-                        <h3 class="project-title">Affiche Food Tech, JUIN 2025</h3>
-                        <p class="project-description">Projet de SAE de groupe </p>
+                        <h3 class="project-title">Affiche Food Tech</h3>
+                        <p class="project-description">Projet de SAE de groupe - Juin 2025</p>
                         <div class="project-tags">
                             <span class="tag">Photoshop</span>
-                            <span class="tag">Evenement</span>
-                            <span class="tag">Food</span>
+                            <span class="tag">Event</span>
                         </div>
                     </div>
                     <div class="project-overlay">
@@ -143,17 +261,17 @@
                     </div>
                 </div>
 
+                <!-- Projet 3 -->
                 <div class="project-card" data-category="Communication">
                     <div class="project-image">
                         <img src="Jinx-et-Silco.jpg" alt="Jinx & Silco">
                     </div>
                     <div class="project-content">
-                        <h3 class="project-title">Jinx & Silco, DECEMBRE 2024</h3>
-                        <p class="project-description">Création personnel inspirée de l'univers Arcane</p>
+                        <h3 class="project-title">Jinx & Silco</h3>
+                        <p class="project-description">Inspiré de l'univers Arcane - Décembre 2024</p>
                         <div class="project-tags">
-                            <span class="tag">Photoshop</span>
                             <span class="tag">Character Design</span>
-                          
+                            <span class="tag">Photoshop</span>
                         </div>
                     </div>
                     <div class="project-overlay">
@@ -161,13 +279,14 @@
                     </div>
                 </div>
 
+                <!-- Projet 4 -->
                 <div class="project-card" data-category="Audiovisuel">
                     <div class="project-image">
                         <img src="Mister_V.png" alt="Portrait Mister V">
                     </div>
                     <div class="project-content">
-                        <h3 class="project-title">Portrait Mister V, JANVIER 2024</h3>
-                        <p class="project-description">Retouche portrait Mister V fait sur Photoshop</p>
+                        <h3 class="project-title">Portrait Mister V</h3>
+                        <p class="project-description">Retouche portrait - Janvier 2024</p>
                         <div class="project-tags">
                             <span class="tag">Retouche</span>
                             <span class="tag">Photoshop</span>
@@ -178,31 +297,17 @@
                     </div>
                 </div>
 
+                <!-- Projet 5 -->
                 <div class="project-card" data-category="Communication">
                     <div class="project-image">
                         <img src="affiche_ousmane_dembele.png" alt="Affiche Ousmane Dembélé">
                     </div>
                     <div class="project-content">
-                        <h3 class="project-title">Affiche Ousmane Dembélé, SEPTEMBRE 2025</h3>
-                        <p class="project-description">Projet perso design sportif </p>
+                        <h3 class="project-title">Ousmane Dembélé</h3>
+                        <p class="project-description">Design sportif - Septembre 2025</p>
                         <div class="project-tags">
-                            <span class="tag">Photoshop</span>
+                            <span class="tag">Sport</span>
                             <span class="tag">Design</span>
-                        </div>
-                    </div>
-                    <div class="project-overlay">
-                        <span>Voir le projet</span>
-                    </div>
-                </div>
-                <div class="project-card" data-category="Audiovisuel">
-                    <div class="project-image">
-                        <img src="Photo_chat.jpg" alt="Photo chats">
-                    </div>
-                    <div class="project-content">
-                        <h3 class="project-title">Photo chats, JUILLET 2025</h3>
-                        <p class="project-description">Photo d'une mère et de son enfant prise au Maroc , Agadir </p>
-                        <div class="project-tags">
-                            <span class="tag">Lightroom</span>
                         </div>
                     </div>
                     <div class="project-overlay">
@@ -210,22 +315,42 @@
                     </div>
                 </div>
 
-                <div class="project-card" data-category="Communication">
+                <!-- Projet 6 -->
+                <div class="project-card" data-category="Audiovisuel">
                     <div class="project-image">
-                        <img src="affiche_po_contre_Kaï.png" alt="Affiche Po contre Kaï">
+                        <img src="Photo_chat.jpg" alt="Photo chats">
                     </div>
                     <div class="project-content">
-                        <h3 class="project-title">Affiche Po contre Kaï, SEPTEMBRE 2025</h3>
-                        <p class="project-description">matte painting sur le thème de Kung fu panda</p>
+                        <h3 class="project-title">Photographie Maroc</h3>
+                        <p class="project-description">Juillet 2025 - Agadir</p>
                         <div class="project-tags">
-                            <span class="tag">Photoshop</span>
-                            <span class="tag">Design</span>
+                            <span class="tag">Lightroom</span>
+                            <span class="tag">Photo</span>
                         </div>
                     </div>
                     <div class="project-overlay">
                         <span>Voir le projet</span>
                     </div>
                 </div>
+
+                <!-- Projet 7 -->
+                <div class="project-card" data-category="Communication">
+                    <div class="project-image">
+                        <img src="affiche_po_contre_Kaï.png" alt="Affiche Po contre Kaï">
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Po contre Kaï</h3>
+                        <p class="project-description">Matte Painting Kung Fu Panda - Septembre 2025</p>
+                        <div class="project-tags">
+                            <span class="tag">Matte Painting</span>
+                            <span class="tag">Photoshop</span>
+                        </div>
+                    </div>
+                    <div class="project-overlay">
+                        <span>Voir le projet</span>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -245,54 +370,6 @@
         </div>
     </div>
 
-    <!-- Skills Section -->
-    <section id="skills" class="skills">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">COMPÉTENCES</h2>
-                <div class="section-line"></div>
-            </div>
-            <div class="skills-content">
-                <div class="skills-bars">
-                    <div class="skill-item">
-                        <div class="skill-header">
-                            <span class="skill-name">Photoshop</span>
-                            <span class="skill-percentage">80%</span>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-progress" data-width="90"></div>
-                        </div>
-                    </div>
-                    <div class="skill-item">
-                        <div class="skill-header">
-                            <span class="skill-name">Lightroom</span>
-                            <span class="skill-percentage">50%</span>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-progress" data-width="85"></div>
-                        </div>
-                    </div>
-                    <div class="skill-item">
-                        <div class="skill-header">
-                            <span class="skill-name">Illustrator</span>
-                            <span class="skill-percentage">65%</span>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-progress" data-width="75"></div>
-                        </div>
-                    </div>
-                        
-                            <div class="skill-progress" data-width="80"></div>
-                        </div>
-                    </div>
-                </div>
-               
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
     <!-- Contact Section -->
     <section id="contact" class="contact">
         <div class="container">
@@ -302,12 +379,14 @@
             </div>
             <div class="contact-content">
                 <div class="contact-info">
-                    <h3>Pour me contacter</h3>
-                    <p>Prêt à donner vie à vos idées créatives ? Contactez-moi juste ici.</p>
+                    <h3>Discutons ensemble</h3>
+                    <p>Vous avez un projet en tête ou vous souhaitez simplement échanger ? N'hésitez pas à me contacter
+                        via le formulaire ou sur mes réseaux.</p>
                     <div class="contact-details">
                         <div class="contact-item">
                             <span class="contact-label">Email</span>
-                            <a href="mailto:aderdour.hicham59@gmail.com" class="contact-value">aderdour.hicham59@gmail.com</a>
+                            <a href="mailto:aderdour.hicham59@gmail.com"
+                                class="contact-value">aderdour.hicham59@gmail.com</a>
                         </div>
                         <div class="contact-item">
                             <span class="contact-label">Formation</span>
@@ -315,7 +394,8 @@
                         </div>
                     </div>
                 </div>
-                <form class="contact-form" action="https://formspree.io/f/xvgwwqeg" method="POST">
+                <!-- Formulaire fonctionnel -->
+                <form id="contact-form" class="contact-form" action="https://formspree.io/f/xvgwwqeg" method="POST">
                     <div class="form-group">
                         <input type="text" name="name" class="form-input" placeholder="Votre nom" required>
                         <span class="input-border"></span>
@@ -325,13 +405,15 @@
                         <span class="input-border"></span>
                     </div>
                     <div class="form-group">
-                        <textarea name="message" class="form-input" rows="5" placeholder="Votre message" required></textarea>
+                        <textarea name="message" class="form-input" rows="5" placeholder="Votre message"
+                            required></textarea>
                         <span class="input-border"></span>
                     </div>
                     <button type="submit" class="submit-button">
                         <span>Envoyer le message</span>
                         <div class="button-bg"></div>
                     </button>
+                    <p id="form-status" class="form-status"></p>
                 </form>
             </div>
         </div>
@@ -341,7 +423,23 @@
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
-                <p>&copy; 2024 Hicham Aderdour. Tous droits réservés.</p>
+                <div class="footer-info">
+                    <p>&copy; 2025 Hicham Aderdour. Tous droits réservés.</p>
+                </div>
+
+                <!-- Réseaux Sociaux Ajoutés -->
+                <div class="footer-socials">
+                    <a href="https://www.linkedin.com/" target="_blank" class="social-link" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://www.instagram.com/" target="_blank" class="social-link" aria-label="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://www.behance.net/" target="_blank" class="social-link" aria-label="Behance">
+                        <i class="fab fa-behance"></i>
+                    </a>
+                </div>
+
                 <div class="footer-links">
                     <a href="#home">Retour en haut</a>
                 </div>
@@ -351,4 +449,5 @@
 
     <script src="app.js"></script>
 </body>
+
 </html>
